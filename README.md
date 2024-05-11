@@ -9,7 +9,7 @@
 - Click on "Create New App"
 - Click the "From manifest" tab
 - Select workspace and click "Next"
-- Copy the content of the file slack_app_manifest.json , update domain name and paste it in the "App manifest" field
+- Copy the content of the file slack_app_manifest.yaml , update domain name and paste it in the "App manifest" field
 - Click "Create" 
 - Click "Install to Workspace"
 - Click "Allow"
