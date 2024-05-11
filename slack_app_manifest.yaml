@@ -1,0 +1,44 @@
+display_information:
+  name: TimezoneUpdater
+  description: Subscribe the messages, catch all messages include time info!
+  long_description: It will catch date info and send all users in the same chanell with converted timezone
+features:
+  bot_user:
+    display_name: TimezoneUpdater
+    always_online: true
+oauth_config:
+  scopes:
+    user:
+      - channels:history
+      - groups:history
+      - im:history
+      - mpim:history
+    bot:
+      - channels:history
+      - channels:read
+      - chat:write
+      - groups:history
+      - im:history
+      - users:read
+      - mpim:history
+      - mpim:write
+      - groups:read
+      - im:read
+      - mpim:read
+settings:
+  event_subscriptions:
+    request_url: https://SITENAME_UPDATE_EMRE/slack/events
+    user_events:
+      - message.channels
+      - message.groups
+      - message.im
+      - message.mpim
+    bot_events:
+      - message.channels
+      - message.groups
+      - message.im
+      - message.mpim
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
+
